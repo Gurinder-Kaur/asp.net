@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace RestaurantFinder
 {
-    public partial class Welcome1 : System.Web.UI.Page
+    public partial class Welcome : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -16,12 +16,8 @@ namespace RestaurantFinder
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Response.Redirect("NearbyPlaces.aspx");
-        }
-
-        protected void Button2_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("googlemap.aspx");
+            Response.Redirect("Login.aspx");
+            
         }
     }
 }

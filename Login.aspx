@@ -2,60 +2,44 @@
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head runat="server">
-    <title></title>
+    <title>User Login</title>
+    <link href="main.css" rel="stylesheet" />
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div style="font-family:Arial">
-<table style="border: 1px solid black">
-    <tr>
-        <td colspan="2">
-            <b>Login</b>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            User Name
-        </td>    
-        <td>
-            :<asp:TextBox ID="txtUserName" runat="server">
+     <div style= "text-align:center" >
+           <h2 style ="font-family: Algerian;">LOGIN</h2><center>
+               </br>
+                 </br>
+    <form id="form1" runat="server" style="border:1px solid #ccc;background-color:white;box-shadow:0px 0px 20px;opacity:1;">
+       <br/><br/>
+        <div class="container">
+            <label style="font-family:Helvetica;"><b>USERNAME</b></label> 
+             </br>
+            :<asp:TextBox ID="txtUserName" CssClass="input" runat="server">
             </asp:TextBox>
-        </td>    
-    </tr>
-    <tr>
-        <td>
-            Password
-        </td>    
-        <td>
-            :<asp:TextBox ID="txtPassword" TextMode="Password" runat="server">
+            </br>
+            </br>
+            <label style="font-family:Helvetica;"><b>PASSWORD</b></label>  
+             </br>
+            :<asp:TextBox ID="txtPassword" TextMode="Password" CssClass="input" runat="server">
             </asp:TextBox>
-        </td>    
-    </tr>
-    <tr>
-        <td>
-                    <asp:CheckBox ID="chkBoxRememberMe" runat="server" Text="Remember me" />
-        </td>    
-        <td>
-            <asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click" />
-        </td>    
-    </tr>
-    <tr>
-        <td>
-            <asp:Label ID="lblMessage" runat="server" Text=""></asp:Label>
-                    
-        </td>    
-        <td>
-            
-        </td>    
-    </tr>
-    
-
-</table>
-<br />
-<a href="Registration/Register.aspx">Click here to register</a> 
-if you do not have a user name and password.
-</div>
-    </form>
+            <div class="container">
+                 <asp:CheckBox ID="chkBoxRememberMe" runat="server" Text="Remember me" />
+                  </br>
+                  <asp:Button ID="btnLogin" CssClass="login" runat="server" Text="Login" OnClick="btnLogin_Click" />
+                  </br>
+                 <asp:Label ID="lblMessage" runat="server" Text=""></asp:Label>
+                <br />
+             <div class="container">
+            <a href="Registration/Register.aspx">Click here to register</a> 
+            if you do not have a user name and password.
+                 </br>
+                 </br>
+            </div>
+                </div></div>
+    </form></center>
+          </div>
 </body>
 </html>

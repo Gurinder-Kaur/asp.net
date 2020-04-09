@@ -93,15 +93,20 @@
     <Content Include="App_Data\Database_log.ldf">
       <DependentUpon>Database.mdf</DependentUpon>
     </Content>
+    <Content Include="future.aspx" />
+    <Content Include="Gmaps.jpg" />
     <Content Include="googlemap.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="main.css" />
     <Content Include="NearbyPlaces.aspx" />
     <Content Include="Registration\Register.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Start.aspx" />
     <Content Include="Welcome.aspx" />
     <Content Include="WelcomeAdmin.aspx" />
+    <Content Include="wooden.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdminLogin.aspx.cs">
@@ -110,6 +115,13 @@
     </Compile>
     <Compile Include="AdminLogin.aspx.designer.cs">
       <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="future.aspx.cs">
+      <DependentUpon>future.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="future.aspx.designer.cs">
+      <DependentUpon>future.aspx</DependentUpon>
     </Compile>
     <Compile Include="googlemap.aspx.cs">
       <DependentUpon>googlemap.aspx</DependentUpon>
@@ -140,6 +152,13 @@
     <Compile Include="Registration\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Start.aspx.cs">
+      <DependentUpon>Start.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Start.aspx.designer.cs">
+      <DependentUpon>Start.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Welcome.aspx.cs">
       <DependentUpon>Welcome.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -165,6 +184,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

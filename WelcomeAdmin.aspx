@@ -13,65 +13,53 @@
             <asp:MultiView ID="MultiView1" runat="server">
                 <asp:View ID="View1" runat="server">
                     <br />
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Welcome to Admin Page<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Welcome to Admin Page<br />
+                    <br />
+                    <br /> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Insert Data" />
+                    &nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:Button ID="Button2" runat="server" Text="View Data" OnClick="Button2_Click" />
                 </asp:View>
-                <asp:View ID="View2" runat="server">Inside insert&nbsp;&nbsp;<br />
-                   <table style="border: 1px solid black">
-    <tr>
-        <td colspan="2">
-            <b>Insert your data here</b>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Restaurant Name
-        </td>    
-        <td>
-            :<asp:TextBox ID="txtRestaurantName" runat="server">
+                <asp:View ID="View2" runat="server"><br />
+                    &nbsp;&nbsp;<table style="border: 1px solid black">
+                        <tr>
+                            <td colspan="2"><b>Insert your data here</b> </td>
+                        </tr>
+                        <tr>
+                            <td>Restaurant Name </td>
+                            <td>:<asp:TextBox ID="txtRestaurantName" runat="server">
             </asp:TextBox>
-        </td>    
-    </tr>
-    <tr>
-        <td>
-            Location
-        </td>    
-        <td>
-            :<asp:TextBox ID="txtLocation"  runat="server">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Location </td>
+                            <td>:<asp:TextBox ID="txtLocation" runat="server">
             </asp:TextBox>
-        </td>    
-    </tr>
-    <tr>
-        <td>
-                   Logo
-        </td>    
-        <td>
-            <asp:FileUpload ID="FileUpload" runat="server" />
-        </td>    
-    </tr>
-    <tr>
-        <td>
-           Discription
-                    
-        </td>    
-        <td>
-            <asp:TextBox ID="discription" runat="server"></asp:TextBox>
-        </td>    
-    </tr>
-    <tr>
-        <td colspan="2">
-            <asp:Button ID="Button9" runat="server" Text="Submit" OnClick="Button9_Click" />
-        </td>
-    </tr>
-       <tr>
-        <td colspan="2">
-            <asp:Label ID="message" runat="server" Text="Label"></asp:Label>
-        </td>
-    </tr>
-
-</table>
-           
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Logo </td>
+                            <td>
+                                <asp:FileUpload ID="FileUpload" runat="server" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Discription </td>
+                            <td>
+                                <asp:TextBox ID="discription" runat="server"></asp:TextBox>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <asp:Button ID="Button9" runat="server" OnClick="Button9_Click" Text="Submit" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <asp:Label ID="message" runat="server" Text="Label"></asp:Label>
+                            </td>
+                        </tr>
+                    </table>
                     &nbsp;<asp:Button ID="Button5" runat="server" Text="Back" OnClick="Button5_Click" />
                 </asp:View>
                 <asp:View ID="View3" runat="server">This is your data<br />

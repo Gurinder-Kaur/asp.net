@@ -1,0 +1,68 @@
+﻿<style>
+body, div, p, ul, li {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Consolas, Helvetica, sans-serif;
+}
+
+.container {
+    padding: 16px;
+}
+
+form {
+    border: 3px solid #f1f1f1;
+    border-radius: 5px;
+    width: 500px;
+    box-shadow: 8px 4px 8px;
+    opacity: 0.8;
+}
+
+    form:hover {
+        box-shadow: 0px 0px 10px;
+        opacity: 1;
+    }
+.login {
+    background-color: #0cc100;
+    font-weight: bold;
+    padding: 10px 18px;
+    margin: 8px 0;
+    cursor: pointer;
+    width: 150px;
+}
+
+    .login:hover {
+        background-color: #00ff11;
+        box-shadow: 0px 0px 15px;
+    }
+.input {
+    width: 423px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 3px solid #f1f1f1;
+    box-sizing: border-box;
+}
+
+.register {
+    background-color: #0cc100;
+    font-weight: bold;
+    padding: 10px 18px;
+    margin: 8px 0;
+    cursor: pointer;
+    width: 150px;
+}
+
+    .register:hover {
+        background-color: #00ff11;
+        box-shadow: 0px 0px 15px;
+    }
+
+.footer a:hover {
+    color: black;
+}
+</style >
+
+
+
+<a href="NearbyPlaces.aspx" > Use my current location</a >
+<a href="googlemap.aspx" > check for desired location</a >
